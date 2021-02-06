@@ -1,0 +1,45 @@
+<div class="container">
+  <h2 style="text-align: center;"> TASKS</h2>
+
+  <div class="dropdown">
+      <label for="departments" style="margin: 20px;text-align: center;">Department</label>
+      <select name="departments" id="departments" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <option value="HR"><a class="dropdown-item" href="#">HR</a></option>
+          <option value="Accounting"><a class="dropdown-item" href="#">Accounting</a></option>
+          <option value="Project"><a class="dropdown-item" href="#">Project Management</a></option>
+      </select>
+  </div><br>
+    
+    <!-- <div class="row" style="margin: 20px;background-color: lightcoral;">
+      <div class="col">Task Title</div>      
+      <div class="col">End Date</div>
+    </div>
+    <div class="row" *ngFor="let item of taskList" style="padding: 5px;margin: 20px;background-color: lightgray;"> 
+      <div class="col" (mouseover)="changeText=true" (mouseout)="changeText=false">{{item.title}}
+        <span *ngIf="changeText">{{item.type}}</span>
+      </div>      
+    <div class="col">{{item.endingdate}}</div>
+    
+  </div>
+ -->
+
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+    <tr>
+      <!--<th scope="col">#</th>-->
+      <th scope="col">Task Title</th>
+      <th scope="col">Ending Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of taskList">
+      <!-- <th scope="row">1</th> -->
+      <td>{{item.title}}</td>
+      <td>{{item.endingdate}}</td>
+    </tr>
+    </table>
+  </div>
+
+
+</div>

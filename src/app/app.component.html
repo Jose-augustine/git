@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Miztech-ai</title>
+</head>
+<body [ngStyle]="{'background' : 'url(../assets/images/about-bg.jpg)'}">
+  <div class="container-fluid body-main">
+  <div class="container-fluid">
+
+    <div class="row" style="margin-bottom: 50px;">
+      <div class="col-md-12 col">
+        <app-navbar></app-navbar> 
+      </div>
+    </div>
+    <div class="row" style="margin-top: 5px;">
+      <div class="col-md-9 col border border-secondary" style="background-color: white;">
+        <router-outlet></router-outlet>
+      </div>
+      <div class="col-md-3 col border border-secondary" style="background-color: white;">
+        <br>
+          <app-side-bar></app-side-bar>
+        <br>
+      </div>
+    </div>
+
+    <!-- Contact-Form -->
+
+    <div class="row" style="margin-top: 5px; margin-bottom: 10px;">
+      <div class="col-md-12 col border border-secondary" style="background-color: whitesmoke;">
+        <app-contact-us></app-contact-us>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="row" style="margin-top: 5px; margin-bottom: 10px;">
+      <div class="col-md-12 col border border-secondary" style="background-color: #000;">
+        <app-bottom></app-bottom>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+</html>
